@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://www.frontendmentor.io/solutions/intro-component-with-signup-form-0pG_v7yjsu)
+- Live Site URL: (https://rad-bienenstitch-f57352.netlify.app/)
 
 ## My process
 
