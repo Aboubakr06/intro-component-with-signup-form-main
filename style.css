@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* */
+:root {
+    --clr-primary-400: hsl(0, 100%, 74%);
+    --clr-primary-300: hsl(154, 59%, 51%);
+    --clr-primary-310: hsl(154, 59%, 41%);
+
+    --clr-accent-500: hsl(248, 32%, 49%);
+
+    --clr-neutral-600: hsl(249, 10%, 26%);
+    --clr-neutral-200: hsl(246, 25%, 77%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff-base: 'Poppins', sans-serif;
+
+    --fw-bolder: 700;
+    --fw-bold: 600;
+    --fw-regular: 500;
+    --fw-small: 400;
+}
+
+/*
+  CSS RESET
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/***********
+   main Css
+************/
+body {
+    --section-padding: 5rem 1.4rem;
+    --content-spacing: 1rem;
+
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    text-align: center;
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
+    background-image: url("images/bg-intro-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+}
+
+.container {
+    display: grid;
+    gap: 4rem;
+    padding: var(--section-padding);
+}
+
+.section__top {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section__top h1 {
+    font-size: 1.75rem;
+    line-height: 2ch;
+}
+
+.section__bottom {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section__bottom h2 {
+    font-size: 1rem;
+    line-height: 2.5ch;
+    padding: 1em 3em;
+    border-radius: 0.5rem;
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-accent-500);
+    border-bottom: 0.3rem solid var(--clr-neutral-600);
+}
+
+h2 span {
+    font-weight: var(--fw-small);
+}
+
+.form {
+    display: grid;
+    padding: 0.5rem 1.5rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--clr-neutral-100);
+    border-bottom: 0.3rem solid var(--clr-neutral-600);
+}
+
+.form .form__prg {
+    font-size: 0.8rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-200);
+}
+
+.form .form__cont {
+    display: grid;
+    position: relative;
+}
+
+.form__prg span {
+    color: var(--clr-primary-400);
+    font-weight: var(--fw-bolder);
+}
+
+.form .input {
+    color: var(--clr-neutral-600);
+    font-weight: var(--fw-bold);
+    font-size: 1rem;
+    padding: 0.75em 1em;
+    margin-top: 1rem;
+    border: 2px solid var(--clr-neutral-200);
+    outline: none;
+    border-radius: 0.5rem;
+
+}
+
+.form .input:hover {
+    border: 2px solid var(--clr-accent-500);
+}
+
+.error {
+    display: none;
+    position: absolute;
+    top: 32%;
+    right: 4%;
+}
+
+.error-prg {
+    display: none;
+    font-size: 0.8rem;
+    text-align: end;
+    color: var(--clr-primary-400);
+}
+
+.form .button {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-300);
+    padding: 0.75em 2em;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border: none;
+    border-bottom: 0.4rem solid var(--clr-primary-310);
+    font-size: 1rem;
+}
+
+.form .button:hover {
+    opacity: 0.7;
+}
+
+@media (min-width:47em) {
+    body {
+        ---section-padding: 6rem 10rem;
+        background-image: url("images/bg-intro-desktop.png");
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var(---section-padding);
+    }
+
+    .container .section__top {
+        text-align: start;
+        max-width: 50%;
+    }
+
+    .section__top h1 {
+        font-size: 3rem;
+    }
+
+}
