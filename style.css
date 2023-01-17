@@ -168,7 +168,7 @@ h2 span {
     border: 2px solid var(--clr-neutral-200);
     outline: none;
     border-radius: 0.5rem;
-
+    min-width: 100%;
 }
 
 .form .input:hover {
